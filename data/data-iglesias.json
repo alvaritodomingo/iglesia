@@ -43,5 +43,14 @@
     "mapa": "https://www.google.com/maps/search/iglesia+luterana+los+bajos+puerto+octay",
     "imagen": "assets/img/church.png",
     "descripcion": "Iglesia rural en Los Bajos, comunidad pequeña pero comprometida."
+  },
+  {
+    "id": 6,
+    "nombre": "Iglesia de Purranque",
+    "direccion": "Purranque, Región de Los Lagos",
+    "horario": "Domingo 10:30 AM",
+    "mapa": "https://www.google.com/maps/search/iglesia+luterana+purranque",
+    "imagen": "assets/img/church.png",
+    "descripcion": "Iglesia en la ciudad de Purranque, parte de nuestra comunidad del lago."
   }
 ]

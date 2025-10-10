@@ -49,14 +49,68 @@
         </div>
     </nav>
 
-    <section class="hero-section position-relative">
-        <div class="hero-overlay"></div>
-        <div class="hero-content container text-center text-white">
-            <h1 class="display-3 fw-bold mb-4">Iglesia Luterana del Lago Llanquihue</h1>
-            <p class="lead mb-5">Una comunidad de fe en el corazón de la Región de Los Lagos</p>
-            <div class="d-flex gap-3 justify-content-center flex-wrap">
-                <a href="cultos.html" class="btn btn-primary btn-lg px-4">Ver Cultos</a>
-                <a href="calendario.html" class="btn btn-outline-light btn-lg px-4">Ver Calendario</a>
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(30, 58, 95, 0.7), rgba(74, 144, 226, 0.7)), url('assets/img/church.png');">
+                    <div class="hero-content container text-center text-white">
+                        <h1 class="display-3 fw-bold mb-4">Iglesia Luterana del Lago Llanquihue</h1>
+                        <p class="lead mb-5">Una comunidad de fe en el corazón de la Región de Los Lagos</p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                            <a href="cultos.html" class="btn btn-primary btn-lg px-4">Ver Cultos</a>
+                            <a href="calendario.html" class="btn btn-outline-light btn-lg px-4">Ver Calendario</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(30, 58, 95, 0.75), rgba(74, 144, 226, 0.75)), url('assets/img/logo.png');">
+                    <div class="hero-content container text-center text-white">
+                        <i class="bi bi-quote fs-1 mb-3"></i>
+                        <h2 class="display-5 fw-light mb-4 fst-italic">«La fe es una confianza viva y audaz en la gracia de Dios. Y esa confianza nos hace felices, valientes y llenos de deseo por Dios y todas las criaturas»</h2>
+                        <p class="lead">— Martín Lutero</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(30, 58, 95, 0.7), rgba(74, 144, 226, 0.7)), url('assets/img/church.png');">
+                    <div class="hero-content container text-center text-white">
+                        <h2 class="display-4 fw-bold mb-4">Seis Comunidades, Una Fe</h2>
+                        <p class="lead mb-4">Frutillar • Llanquihue • Nueva Braunau • Los Bajos • Purranque • Puerto Octay-Fonck</p>
+                        <a href="iglesias.html" class="btn btn-light btn-lg px-4">Conocer Nuestras Iglesias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="welcome-section text-center">
+                        <h2 class="display-5 mb-4">¡Bienvenidos a la página web de la comunidad luterana del lago!</h2>
+                        <p class="lead mb-4">Nos alegra que estén aquí. En nuestras páginas encontrarán información sobre nuestra comunidad.</p>
+                        <p>Somos una gran comunidad, compuesta por seis subcomunidades, que son <strong>Frutillar, Llanquihue, Nueva Braunau, Los Bajos, Purranque</strong> y <strong>Puerto Octay-Puerto Fonck</strong>. Somos una comunidad cristiana y creemos en Dios, que se manifiesta en el Padre, el Hijo y el Espíritu Santo.</p>
+                        <p>Como iglesia luterana, nos consideramos herederos de la tradición de <strong>Martín Lutero</strong>, el reformador alemán del siglo XVI. Pertenecemos a la <strong>Federación Luterana Mundial</strong> y mantenemos estrechos contactos con nuestras iglesias asociadas.</p>
+                        <p>Nuestra comunidad fue fundada por inmigrantes protestantes que trajeron consigo su fe desde Europa.</p>
+                        <p>En nuestros cultos alabamos a Dios por sus bendiciones y le pedimos ayuda en nuestras vidas. Celebramos nuestros cultos en castellano y le invitamos cordialmente a participar en las actividades de nuestra comunidad.</p>
+                        <p class="fw-bold">Encontrará toda la información actualizada en el <a href="calendario.html">calendario</a>.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -150,7 +204,7 @@
     <section class="py-5 bg-primary text-white">
         <div class="container text-center">
             <h2 class="mb-4">Nuestras Iglesias</h2>
-            <p class="lead mb-4">Cinco iglesias alrededor del Lago Llanquihue te esperan</p>
+            <p class="lead mb-4">Seis iglesias alrededor del Lago Llanquihue te esperan</p>
             <a href="iglesias.html" class="btn btn-light btn-lg">Ver Ubicaciones</a>
         </div>
     </section>

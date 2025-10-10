@@ -43,18 +43,23 @@ Professional, responsive static website for the Lutheran Church of Lake Llanquih
 
 ### Key Features
 1. **Sticky Navigation**: Fixed navbar with mobile collapse
-2. **Hero Section**: Full-width hero with gradient overlay
-3. **Dynamic Churches**: JSON-based church locations loading
-4. **Calendar Integration**: Google Calendar embed with monthly/agenda tabs
-5. **Contact Form**: mailto functionality with form validation
-6. **Social Media**: Facebook integration
-7. **Responsive Design**: Mobile-first approach with breakpoints at 576px, 768px, 1200px
+2. **Hero Carousel**: Dynamic 3-slide carousel with quotes and community info
+3. **Welcome Section**: Comprehensive introduction to the community
+4. **Dynamic Churches**: JSON-based church locations loading (6 churches)
+5. **Calendar Integration**: Google Calendar embed with monthly/agenda tabs
+6. **Contact Form**: mailto functionality with form validation
+7. **Social Media**: Facebook integration
+8. **Responsive Design**: Mobile-first approach with breakpoints at 576px, 768px, 1200px
+9. **Improved Footer**: Better contrast with dark background (#2c3e50) and white text
 
 ### Pages Content
 
 #### Home (index.html)
-- Hero section with Lake Llanquihue imagery
-- CTAs to Cultos and Calendar
+- Hero carousel with 3 slides:
+  - Slide 1: Main title and CTAs to Cultos and Calendar
+  - Slide 2: Martin Luther inspirational quote
+  - Slide 3: Six communities message
+- Welcome section with community introduction
 - Latest activities cards (3)
 - Preview sections for all main pages
 - Social media footer
@@ -77,12 +82,13 @@ Professional, responsive static website for the Lutheran Church of Lake Llanquih
 
 #### Iglesias (iglesias.html)
 - Dynamically loaded from data-iglesias.json
-- 5 church locations around Lake Llanquihue:
+- 6 church locations around Lake Llanquihue:
   - Frutillar
   - Llanquihue (Totoral)
   - Puerto Octay (Fonck)
   - Nueva Braunau
   - Los Bajos
+  - Purranque
 - Each card: photo, address, schedule, map link
 
 #### Contacto (contacto.html)
@@ -126,6 +132,14 @@ The workflow is configured to automatically serve on port 5000.
 - Focus states on interactive elements
 
 ## Recent Changes
+- **October 10, 2025**: Website improvements
+  - Added dynamic hero carousel with 3 slides (main message, Martin Luther quote, six communities)
+  - Created welcome section with comprehensive community introduction
+  - Improved footer contrast with darker background (#2c3e50) and white text
+  - Added Purranque as 6th church location
+  - Updated all references from 5 to 6 churches
+  - Enhanced visual design and user experience
+
 - **October 10, 2025**: Initial website creation
   - Created all 6 main pages
   - Implemented responsive design

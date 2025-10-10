@@ -1,0 +1,93 @@
+Quiero crear una página web moderna, profesional y responsive (mobile first) para la Iglesia Luterana del Lago Llanquihue, con dominio iglesialuteranadellago.cl.
+Debe estar desarrollada con HTML, Bootstrap 5, CSS y JS simple, sin jQuery.
+
+Estructura del sitio
+
+Menú principal:
+
+Inicio
+
+Nosotros
+
+Calendario
+
+Cultos
+
+Iglesias
+
+Contáctanos
+
+Contenido y secciones
+
+Inicio:
+
+Imagen grande del Lago Llanquihue con el título “Iglesia Luterana del Lago Llanquihue”.
+
+Dos botones principales: Ver Cultos y Ver Calendario.
+
+Un blog o sección de “Últimas actividades” con tarjetas.
+
+Una vista previa del resto de secciones del sitio.
+
+Nosotros:
+
+Historia de la Iglesia y sus orígenes.
+
+Fotos e información breve de cada integrante o pastor.
+
+Calendario:
+
+Debe tener el calendario mensual de Google Calendar embebido, visible directamente en la web.
+
+Posibilidad de cambiar entre vista mensual y vista tipo agenda.
+
+Cultos:
+
+Explicación sobre qué es un culto.
+
+Imágenes de los cultos y celebraciones (matrimonios, bautismos, funerales).
+
+Botón para contactar a los pastores o pedir información.
+
+Iglesias:
+
+Información de las 5 iglesias luteranas alrededor del Lago Llanquihue: foto, dirección, horario y link a mapa.
+
+Ejemplo: Frutillar, Llanquihue (Totoral), Puerto Octay (Fonck), Nueva Braunau, Los Bajos.
+
+Contáctanos:
+
+Fotos de los pastores con su número de contacto.
+
+Formulario de contacto (nombre, email, teléfono, mensaje).
+
+Enlaces a redes sociales (Facebook e Instagram).
+
+Diseño y colores
+
+Debe ser limpio, claro y armonioso, con estos colores:
+
+Azul marino
+
+Azul claro
+
+Celeste
+
+Blanco cremita
+
+Tipografía moderna, tipo Inter o Nunito, y un diseño que combine elegancia con sencillez.
+Las imágenes deben transmitir paz, naturaleza y espiritualidad, destacando el lago Llanquihue y las iglesias.
+
+Requisitos técnicos
+
+Diseño mobile first y completamente responsivo.
+
+Navbar fija arriba y footer con datos de contacto y redes sociales.
+
+Optimización básica de SEO y accesibilidad (alt en imágenes, contraste adecuado).
+
+Calendario funcional conectado con Google Calendar.
+
+Código limpio, ordenado y comentado.
+
+Preparado para conectar dominio iglesialuteranadellago.cl y funcionar en HTTPS.

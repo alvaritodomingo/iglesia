@@ -132,13 +132,26 @@ The workflow is configured to automatically serve on port 5000.
 - Focus states on interactive elements
 
 ## Recent Changes
-- **October 10, 2025**: Website improvements
-  - Added dynamic hero carousel with 3 slides (main message, Martin Luther quote, six communities)
-  - Created welcome section with comprehensive community introduction
-  - Improved footer contrast with darker background (#2c3e50) and white text
+- **October 10, 2025**: Major visual redesign and enhancements
+  - **Hero Sections**: Replaced all page headers with stunning image-based hero sections
+    - Index: Dynamic 3-slide carousel with Lake Llanquihue panorama (lake-hero.png)
+    - Nosotros: Historic church image with lake view (church-history.jpg)
+    - Calendario, Cultos: White church image (church-white.jpg)
+    - Iglesias, Contacto: Lake panorama with volcanoes (lake-hero.png)
+  - **Welcome Section**: Complete redesign with 4 feature cards and gradient highlight box
+    - Icon-based cards for Six Communities, Lutheran Tradition, World Federation, European Heritage
+    - Professional gradient styling with hover effects
+    - Call-to-action button for calendar
+  - **Nuestras Iglesias Section**: Enhanced with parallax background and mini-cards
+    - Church overview cards with glass-morphism effect
+    - Improved visual hierarchy and engagement
+  - **CSS Enhancements**: Added new classes for modern UI
+    - .hero-image: Image-based hero with gradient overlay
+    - .welcome-modern: Gradient background for welcome section
+    - .welcome-card, .icon-circle: Card components with hover animations
+    - .churches-section, .church-mini-card: Church section styling
   - Added Purranque as 6th church location
   - Updated all references from 5 to 6 churches
-  - Enhanced visual design and user experience
 
 - **October 10, 2025**: Initial website creation
   - Created all 6 main pages

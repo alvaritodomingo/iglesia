@@ -237,6 +237,40 @@ body {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
 
+.churches-section {
+    position: relative;
+}
+
+.church-mini-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.church-mini-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.icon-circle-small {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.church-mini-card:hover .icon-circle-small {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
 .card {
     border: none;
     border-radius: 12px;

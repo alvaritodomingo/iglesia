@@ -138,6 +138,68 @@ body {
     margin-bottom: 1rem;
 }
 
+.welcome-modern {
+    background: linear-gradient(180deg, #ffffff 0%, var(--blanco-cremita) 100%);
+}
+
+.welcome-card {
+    background: white;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.welcome-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--celeste) 0%, var(--azul-claro) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.welcome-card:hover .icon-circle {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, var(--azul-claro) 0%, var(--azul-marino) 100%);
+}
+
+.icon-circle i {
+    color: white !important;
+}
+
+.welcome-highlight {
+    background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-claro) 100%);
+    color: white;
+    box-shadow: 0 8px 24px rgba(30, 58, 95, 0.3);
+}
+
+.welcome-highlight h3,
+.welcome-highlight p {
+    color: white;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .page-header {
     padding: 3rem 0;
     background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-claro) 100%);

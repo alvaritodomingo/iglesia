@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ubicaciones de las iglesias luteranas alrededor del Lago Llanquihue">
+    <title>Nuestras Iglesias - Iglesia Luterana del Lago Llanquihue</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo Iglesia Luterana" class="logo-img">
+                <span class="ms-2 fw-bold text-primary">Iglesia Luterana del Lago</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cultos.html">Cultos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="iglesias.html">Iglesias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Nuestras Iglesias</h1>
+            <p class="lead">Cinco comunidades alrededor del Lago Llanquihue</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <p class="lead">La Iglesia Luterana del Lago Llanquihue está presente en cinco localidades de la región. Cada iglesia mantiene su propia identidad y tradición, formando parte de una sola comunidad de fe.</p>
+                </div>
+            </div>
+
+            <div id="iglesias-container" class="row g-4">
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Cargando iglesias...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Visítanos</h2>
+            <p class="lead mb-4">Todas nuestras iglesias te reciben con los brazos abiertos. Ven a conocernos en cualquiera de nuestras ubicaciones.</p>
+            <a href="contacto.html" class="btn btn-primary btn-lg">Contactar</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Iglesia Luterana del Lago Llanquihue</h5>
+                    <p>Una comunidad de fe en la Región de Los Lagos</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="nosotros.html" class="text-white-50">Nosotros</a></li>
+                        <li><a href="calendario.html" class="text-white-50">Calendario</a></li>
+                        <li><a href="cultos.html" class="text-white-50">Cultos</a></li>
+                        <li><a href="iglesias.html" class="text-white-50">Iglesias</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <a href="https://web.facebook.com/profile.php?id=100070098432222" target="_blank" rel="noopener" class="text-white fs-3 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="my-3 bg-white">
+            <p class="text-center mb-0">&copy; 2025 Iglesia Luterana del Lago Llanquihue. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

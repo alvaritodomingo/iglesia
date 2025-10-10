@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nombre": "Iglesia de Frutillar",
+    "direccion": "Frutillar, Región de Los Lagos",
+    "horario": "Domingo 11:00 AM",
+    "mapa": "https://www.google.com/maps/search/iglesia+luterana+frutillar",
+    "imagen": "assets/img/church.png",
+    "descripcion": "Iglesia histórica ubicada en Frutillar, conocida por su arquitectura tradicional alemana."
+  },
+  {
+    "id": 2,
+    "nombre": "Iglesia de Llanquihue (Totoral)",
+    "direccion": "Totoral, Llanquihue, Región de Los Lagos",
+    "horario": "Domingo 9:30 AM",
+    "mapa": "https://www.google.com/maps/search/iglesia+luterana+llanquihue+totoral",
+    "imagen": "assets/img/church.png",
+    "descripcion": "Iglesia en el sector de Totoral, comunidad acogedora y activa."
+  },
+  {
+    "id": 3,
+    "nombre": "Iglesia de Puerto Octay (Fonck)",
+    "direccion": "Fonck, Puerto Octay, Región de Los Lagos",
+    "horario": "Domingo 10:00 AM",
+    "mapa": "https://www.google.com/maps/search/iglesia+luterana+puerto+octay+fonck",
+    "imagen": "assets/img/church.png",
+    "descripcion": "Iglesia tradicional en el sector de Fonck, con hermosa vista al lago."
+  },
+  {
+    "id": 4,
+    "nombre": "Iglesia de Nueva Braunau",
+    "direccion": "Nueva Braunau, Puerto Octay, Región de Los Lagos",
+    "horario": "Domingo 11:30 AM",
+    "mapa": "https://www.google.com/maps/search/iglesia+luterana+nueva+braunau",
+    "imagen": "assets/img/church.png",
+    "descripcion": "Iglesia en la localidad de Nueva Braunau, con fuerte tradición luterana."
+  },
+  {
+    "id": 5,
+    "nombre": "Iglesia de Los Bajos",
+    "direccion": "Los Bajos, Puerto Octay, Región de Los Lagos",
+    "horario": "Domingo 12:00 PM",
+    "mapa": "https://www.google.com/maps/search/iglesia+luterana+los+bajos+puerto+octay",
+    "imagen": "assets/img/church.png",
+    "descripcion": "Iglesia rural en Los Bajos, comunidad pequeña pero comprometida."
+  }
+]

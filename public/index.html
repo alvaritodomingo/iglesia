@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iglesia Luterana del Lago Llanquihue - Comunidad de fe en la región del Lago Llanquihue, Chile">
+    <meta name="keywords" content="iglesia luterana, lago llanquihue, frutillar, puerto octay, cultos, celebraciones">
+    <title>Inicio - Iglesia Luterana del Lago Llanquihue</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo Iglesia Luterana" class="logo-img">
+                <span class="ms-2 fw-bold text-primary">Iglesia Luterana del Lago</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cultos.html">Cultos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iglesias.html">Iglesias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(30, 58, 95, 0.5), rgba(74, 144, 226, 0.5)), url('assets/img/lake-hero.png');">
+                    <div class="hero-content container text-center text-white">
+                        <h1 class="display-2 fw-bold mb-4 animate-fade-in">Iglesia Luterana del Lago Llanquihue</h1>
+                        <p class="lead mb-5 fs-3">Una comunidad de fe en el corazón de la Región de Los Lagos</p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                            <a href="cultos.html" class="btn btn-primary btn-lg px-5 py-3">Ver Cultos</a>
+                            <a href="calendario.html" class="btn btn-outline-light btn-lg px-5 py-3">Ver Calendario</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(30, 58, 95, 0.6), rgba(74, 144, 226, 0.6)), url('assets/img/lake-hero.png');">
+                    <div class="hero-content container text-center text-white">
+                        <i class="bi bi-quote fs-1 mb-4"></i>
+                        <h2 class="display-5 fw-light mb-4 fst-italic px-md-5">«La fe es una confianza viva y audaz en la gracia de Dios. Y esa confianza nos hace felices, valientes y llenos de deseo por Dios y todas las criaturas»</h2>
+                        <p class="lead fs-4">— Martín Lutero</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(30, 58, 95, 0.5), rgba(74, 144, 226, 0.5)), url('assets/img/lake-hero.png');">
+                    <div class="hero-content container text-center text-white">
+                        <h2 class="display-3 fw-bold mb-4">Seis Comunidades, Una Fe</h2>
+                        <p class="lead mb-4 fs-4">Frutillar • Llanquihue • Nueva Braunau • Los Bajos • Purranque • Puerto Octay-Fonck</p>
+                        <a href="iglesias.html" class="btn btn-light btn-lg px-5 py-3">Conocer Nuestras Iglesias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <section class="py-5 bg-white welcome-modern">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">¡Bienvenidos a nuestra comunidad!</h2>
+                <p class="lead text-muted fs-4">Nos alegra que estén aquí. Descubran más sobre nuestra familia de fe.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="welcome-card text-center p-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-people-fill fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Seis Comunidades</h4>
+                        <p class="text-muted">Frutillar, Llanquihue, Nueva Braunau, Los Bajos, Purranque y Puerto Octay-Fonck unidos en la fe</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="welcome-card text-center p-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-book-fill fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Tradición Luterana</h4>
+                        <p class="text-muted">Herederos de Martín Lutero, reformador del siglo XVI, manteniendo viva la tradición</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="welcome-card text-center p-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-globe-americas fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Federación Mundial</h4>
+                        <p class="text-muted">Miembros de la Federación Luterana Mundial con lazos internacionales</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="welcome-card text-center p-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="bi bi-heart-fill fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Herencia Europea</h4>
+                        <p class="text-muted">Fundada por inmigrantes protestantes que trajeron su fe desde Europa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="welcome-highlight p-5 rounded-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h3 class="mb-3"><i class="bi bi-cross2 text-primary me-2"></i>Nuestra Fe</h3>
+                                <p class="mb-3">Somos una comunidad cristiana que cree en Dios, manifestado en el Padre, el Hijo y el Espíritu Santo. En nuestros cultos alabamos a Dios por sus bendiciones y le pedimos ayuda en nuestras vidas.</p>
+                                <p class="mb-0">Celebramos nuestros cultos en castellano y les invitamos cordialmente a participar en las actividades de nuestra comunidad.</p>
+                            </div>
+                            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                                <a href="calendario.html" class="btn btn-primary btn-lg px-4 py-3">
+                                    <i class="bi bi-calendar-event me-2"></i>Ver Calendario
+                                </a>
+                                <p class="text-muted mt-2 mb-0 small">Información actualizada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Últimas Actividades</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/church.png" class="card-img-top" alt="Culto Dominical">
+                        <div class="card-body">
+                            <h5 class="card-title">Culto Dominical</h5>
+                            <p class="card-text">Únete a nuestro culto dominical cada semana. Un espacio de adoración, reflexión y comunidad.</p>
+                            <p class="text-muted"><small><i class="bi bi-calendar"></i> Todos los domingos</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/church.png" class="card-img-top" alt="Escuela Dominical">
+                        <div class="card-body">
+                            <h5 class="card-title">Escuela Dominical</h5>
+                            <p class="card-text">Espacio de formación y aprendizaje para niños y jóvenes sobre las enseñanzas bíblicas.</p>
+                            <p class="text-muted"><small><i class="bi bi-calendar"></i> Domingos 10:00 AM</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/church.png" class="card-img-top" alt="Coro de la Iglesia">
+                        <div class="card-body">
+                            <h5 class="card-title">Coro de la Iglesia</h5>
+                            <p class="card-text">Nuestro coro alaba a Dios a través de la música. ¡Todos son bienvenidos a participar!</p>
+                            <p class="text-muted"><small><i class="bi bi-music-note"></i> Ensayos Sábados</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="assets/img/logo.png" alt="Nosotros" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Nosotros</h2>
+                    <p class="lead">Somos una comunidad luterana comprometida con la fe, el servicio y la tradición.</p>
+                    <p>Nuestra iglesia tiene una larga historia en la región del Lago Llanquihue, sirviendo a las comunidades locales con amor y dedicación.</p>
+                    <a href="nosotros.html" class="btn btn-primary">Conocer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="assets/img/church.png" alt="Calendario" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="mb-4">Calendario de Actividades</h2>
+                    <p class="lead">Mantente informado sobre nuestros eventos y actividades.</p>
+                    <p>Consulta nuestro calendario actualizado con todos los cultos, celebraciones especiales y eventos de la comunidad.</p>
+                    <a href="calendario.html" class="btn btn-primary">Ver Calendario</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="assets/img/church.png" alt="Cultos" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Cultos y Celebraciones</h2>
+                    <p class="lead">Participa en nuestras celebraciones religiosas.</p>
+                    <p>Ofrecemos cultos dominicales, matrimonios, bautismos y servicios funerales. Todos son bienvenidos a nuestra comunidad.</p>
+                    <a href="cultos.html" class="btn btn-primary">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="churches-section py-5" style="background-image: linear-gradient(rgba(30, 58, 95, 0.9), rgba(74, 144, 226, 0.85)), url('assets/img/church-white.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container">
+            <div class="text-center text-white mb-5">
+                <h2 class="display-4 fw-bold mb-4">Nuestras Iglesias</h2>
+                <p class="lead fs-3 mb-4">Seis comunidades alrededor del Lago Llanquihue</p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="church-mini-card text-center p-4">
+                        <div class="icon-circle-small mb-3 mx-auto">
+                            <i class="bi bi-geo-alt-fill fs-2 text-white"></i>
+                        </div>
+                        <h5 class="text-white mb-2">Frutillar & Llanquihue</h5>
+                        <p class="text-white-50 small mb-0">Totoral y centro de Frutillar</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="church-mini-card text-center p-4">
+                        <div class="icon-circle-small mb-3 mx-auto">
+                            <i class="bi bi-geo-alt-fill fs-2 text-white"></i>
+                        </div>
+                        <h5 class="text-white mb-2">Puerto Octay & Fonck</h5>
+                        <p class="text-white-50 small mb-0">Comunidades históricas del lago</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="church-mini-card text-center p-4">
+                        <div class="icon-circle-small mb-3 mx-auto">
+                            <i class="bi bi-geo-alt-fill fs-2 text-white"></i>
+                        </div>
+                        <h5 class="text-white mb-2">Nueva Braunau & Los Bajos</h5>
+                        <p class="text-white-50 small mb-0">Fe y tradición alemana</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="iglesias.html" class="btn btn-light btn-lg px-5 py-3">
+                    <i class="bi bi-map me-2"></i>Explorar Todas las Iglesias
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Iglesia Luterana del Lago Llanquihue</h5>
+                    <p>Una comunidad de fe en la Región de Los Lagos</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="nosotros.html" class="text-white-50">Nosotros</a></li>
+                        <li><a href="calendario.html" class="text-white-50">Calendario</a></li>
+                        <li><a href="cultos.html" class="text-white-50">Cultos</a></li>
+                        <li><a href="iglesias.html" class="text-white-50">Iglesias</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <a href="https://web.facebook.com/profile.php?id=100070098432222" target="_blank" rel="noopener" class="text-white fs-3 me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="my-3 bg-white">
+            <p class="text-center mb-0">&copy; 2025 Iglesia Luterana del Lago Llanquihue. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

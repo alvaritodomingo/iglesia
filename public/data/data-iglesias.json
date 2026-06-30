@@ -10,12 +10,12 @@
   },
   {
     "id": 2,
-    "nombre": "Iglesia de Llanquihue (Totoral)",
-    "direccion": "Totoral, Llanquihue, Región de Los Lagos",
+    "nombre": "Iglesia de Llanquihue",
+    "direccion": "Salomón Negrín, Llanquihue, Región de Los Lagos",
     "horario": "Domingo 9:30 AM",
-    "mapa": "https://www.google.com/maps/search/iglesia+luterana+llanquihue+totoral",
+    "mapa": "https://www.google.com/maps/search/Salom%C3%B3n+Negr%C3%ADn+Llanquihue",
     "imagen": "assets/img/church.png",
-    "descripcion": "Iglesia en el sector de Totoral, comunidad acogedora y activa."
+    "descripcion": "Iglesia ubicada en calle Salomón Negrín, comunidad acogedora y activa."
   },
   {
     "id": 3,

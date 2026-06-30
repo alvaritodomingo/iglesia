@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calendario de actividades y eventos de la Iglesia Luterana del Lago Llanquihue">
-    <title>Calendario - Iglesia Luterana del Lago Llanquihue</title>
+    <meta name="description" content="Calendario de actividades 2026 de la Iglesia Luterana del Lago Llanquihue">
+    <title>Calendario 2026 - Iglesia Luterana del Lago Llanquihue</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -12,6 +12,121 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .month-card {
+            border-left: 5px solid var(--azul-claro);
+            border-radius: 0 12px 12px 0;
+            background: white;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: box-shadow 0.3s ease;
+        }
+        .month-card:hover {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+        }
+        .month-header {
+            background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-claro) 100%);
+            color: white;
+            border-radius: 0 12px 0 0;
+            padding: 1rem 1.5rem;
+        }
+        .month-header h3 {
+            color: white;
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        .month-header .season-badge {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 0.3rem;
+        }
+        .service-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 0.6rem 0;
+        }
+        .service-item:last-child {
+            border-bottom: none;
+        }
+        .service-date {
+            font-weight: 700;
+            color: var(--azul-marino);
+            font-size: 0.9rem;
+        }
+        .service-name {
+            color: var(--azul-claro);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        .service-times {
+            font-size: 0.88rem;
+            color: #555;
+        }
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .label-cultos {
+            background: #e8f0fb;
+            color: var(--azul-marino);
+        }
+        .label-comunidad {
+            background: #e8f7ee;
+            color: #155724;
+        }
+        .label-especial {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .activity-item {
+            font-size: 0.88rem;
+            color: #444;
+            padding: 0.35rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        .activity-item i {
+            font-size: 0.75rem;
+            width: 16px;
+        }
+        .month-nav-btn {
+            background: white;
+            border: 2px solid var(--azul-claro);
+            color: var(--azul-marino);
+            border-radius: 8px;
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+        .month-nav-btn:hover,
+        .month-nav-btn.active {
+            background: var(--azul-claro);
+            color: white;
+        }
+        .calendar-intro-box {
+            background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-claro) 100%);
+            border-radius: 16px;
+            color: white;
+            padding: 2rem;
+        }
+        .calendar-intro-box h2,
+        .calendar-intro-box p {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
@@ -50,92 +165,480 @@
 
     <section class="hero-image" style="background-image: url('assets/img/church-white.jpg');">
         <div class="container text-center">
-            <h1 class="display-3 fw-bold mb-3">Calendario de Actividades</h1>
-            <p class="lead fs-3">Mantente informado sobre nuestros eventos y celebraciones</p>
-            <p class="fs-5"><i class="bi bi-calendar-event me-2"></i>Cultos, eventos y actividades comunitarias</p>
+            <h1 class="display-3 fw-bold mb-3">Calendario de Actividades 2026</h1>
+            <p class="lead fs-3">Cultos, celebraciones y vida comunitaria</p>
+            <p class="fs-5"><i class="bi bi-calendar-event me-2"></i>Abril — Diciembre 2026</p>
         </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-4 bg-light">
         <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-10">
-                    <p class="lead text-center">Aquí encontrarás todas nuestras actividades programadas: cultos dominicales, celebraciones especiales, eventos comunitarios y más. Mantente al día con nuestra comunidad.</p>
+            <div class="calendar-intro-box mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="mb-2">Año Litúrgico 2026</h2>
+                        <p class="mb-0 opacity-90">Este calendario refleja los cultos dominicales en nuestras seis comunidades y la vida activa de nuestra iglesia a lo largo del año. Todos son bienvenidos.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <i class="bi bi-book-half" style="font-size: 4rem; opacity: 0.4;"></i>
+                    </div>
                 </div>
             </div>
 
-            <ul class="nav nav-tabs justify-content-center mb-4" id="calendarTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="mensual-tab" data-bs-toggle="tab" data-bs-target="#mensual" type="button" role="tab" aria-controls="mensual" aria-selected="true">
-                        <i class="bi bi-calendar3"></i> Vista Mensual
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="agenda-tab" data-bs-toggle="tab" data-bs-target="#agenda" type="button" role="tab" aria-controls="agenda" aria-selected="false">
-                        <i class="bi bi-list-ul"></i> Vista Agenda
-                    </button>
-                </li>
-            </ul>
-
-            <div class="tab-content" id="calendarTabsContent">
-                <div class="tab-pane fade show active" id="mensual" role="tabpanel" aria-labelledby="mensual-tab">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSantiago&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&mode=MONTH" style="border:solid 1px #777" frameborder="0" scrolling="no" title="Calendario Mensual de la Iglesia"></iframe>
-                    </div>
-                    <p class="text-muted text-center mt-3">
-                        <small>Para agregar este calendario a tu aplicación, contacta con la secretaría de la iglesia</small>
-                    </p>
-                </div>
-                <div class="tab-pane fade" id="agenda" role="tabpanel" aria-labelledby="agenda-tab">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSantiago&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&mode=AGENDA" style="border:solid 1px #777" frameborder="0" scrolling="no" title="Calendario Agenda de la Iglesia"></iframe>
-                    </div>
-                    <p class="text-muted text-center mt-3">
-                        <small>Para agregar este calendario a tu aplicación, contacta con la secretaría de la iglesia</small>
-                    </p>
-                </div>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <a href="#abril" class="month-nav-btn">Abril</a>
+                <a href="#mayo" class="month-nav-btn">Mayo</a>
+                <a href="#junio" class="month-nav-btn">Junio</a>
+                <a href="#julio" class="month-nav-btn">Julio</a>
+                <a href="#agosto" class="month-nav-btn">Agosto</a>
+                <a href="#septiembre" class="month-nav-btn">Septiembre</a>
+                <a href="#octubre" class="month-nav-btn">Octubre</a>
+                <a href="#noviembre" class="month-nav-btn">Noviembre</a>
+                <a href="#diciembre" class="month-nav-btn">Diciembre</a>
             </div>
-        </div>
-    </section>
 
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Actividades Regulares</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-calendar-check text-primary"></i> Cultos Dominicales</h5>
-                            <p class="card-text">Todos los domingos celebramos el culto en nuestras seis iglesias. Horarios variados según la ubicación.</p>
-                            <a href="iglesias.html" class="btn btn-sm btn-outline-primary">Ver Horarios</a>
-                        </div>
-                    </div>
+            <!-- ABRIL -->
+            <div id="abril" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-sunrise me-2"></i>Abril 2026</h3>
+                    <span class="season-badge">📖 Tiempo de Pascua</span>
                 </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-book text-primary"></i> Escuela Dominical</h5>
-                            <p class="card-text">Espacio de formación para niños y jóvenes. Cada domingo a las 10:00 AM en todas nuestras iglesias.</p>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">2 al 5 de Abril — Semana Santa</div>
+                                <div class="service-name">Jueves Santo</div>
+                                <div class="service-times">Frutillar 17:30 · Llanquihue 19:30</div>
+                                <div class="service-name mt-1">Viernes Santo</div>
+                                <div class="service-times">Purranque 10:00 · Frutillar 11:30</div>
+                                <div class="service-name mt-1">Pascua de Resurrección</div>
+                                <div class="service-times">Frutillar 07:30 · Nueva Braunau 07:00 · Puerto Octay 10:00</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">12 de Abril</div>
+                                <div class="service-name">Cuasimodo</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">19 de Abril</div>
+                                <div class="service-name">Misericordia Domini</div>
+                                <div class="service-times">Nueva Braunau 11:30 · Frutillar 11:30 · Purranque 15:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">26 de Abril</div>
+                                <div class="service-name">Jubilate</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-music-note-beamed text-primary"></i> Ensayo de Coro</h5>
-                            <p class="card-text">El coro se reúne todos los sábados para ensayar. Nuevos miembros siempre son bienvenidos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-people text-primary"></i> Reunión de Jóvenes</h5>
-                            <p class="card-text">Los jóvenes se reúnen cada viernes en la tarde para compartir, estudiar y realizar actividades.</p>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 7 abr · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 23 abr · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 16 y 30 abr · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 18 abr · 10:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Clase de Confirmación</strong> · Frutillar · 25 abr · 10:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 28 abr · 19:30</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Culto Hogar de Ancianos</strong> · Llanquihue · 6 abr · 16:00</div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- MAYO -->
+            <div id="mayo" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-cloud-sun me-2"></i>Mayo 2026</h3>
+                    <span class="season-badge">📖 Ascensión y Pentecostés</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">3 de Mayo</div>
+                                <div class="service-name">Kantate</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">10 de Mayo</div>
+                                <div class="service-name">Rogate</div>
+                                <div class="service-times">Los Bajos 10:00 · Frutillar 11:30 · Nueva Braunau 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">17 de Mayo</div>
+                                <div class="service-name">Exaudi</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 15:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">24 de Mayo</div>
+                                <div class="service-name">Pentecostés</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">31 de Mayo</div>
+                                <div class="service-name">Trinidad</div>
+                                <div class="service-times">Llanquihue 11:30 · Frutillar 11:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 5 may · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 14 y 28 may · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 16 may · 10:00–13:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Clase de Confirmación</strong> · Frutillar · 23 may · 10:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 26 may · 19:30</div>
+                            <div class="activity-item"><i class="bi bi-dot text-warning"></i><strong>Conferencia Pastores ILCH</strong> · Online · 15 may · 08:00–10:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUNIO -->
+            <div id="junio" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-tree me-2"></i>Junio 2026</h3>
+                    <span class="season-badge">📖 Tiempo de la Iglesia</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">7 de Junio</div>
+                                <div class="service-name">1° Domingo después de Trinidad</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">14 de Junio</div>
+                                <div class="service-name">2° Domingo después de Trinidad</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">21 de Junio</div>
+                                <div class="service-name">3° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">28 de Junio</div>
+                                <div class="service-name">4° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 2 jun · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 25 jun · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 11 y 25 jun · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 20 jun · 10:00–13:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Clase de Confirmación</strong> · Frutillar · 27 jun · 10:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 23 jun · 19:30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JULIO -->
+            <div id="julio" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-snow me-2"></i>Julio 2026</h3>
+                    <span class="season-badge">📖 Tiempo de la Iglesia</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">5 de Julio</div>
+                                <div class="service-name">5° Domingo después de Trinidad</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">12 de Julio</div>
+                                <div class="service-name">6° Domingo después de Trinidad</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">19 de Julio</div>
+                                <div class="service-name">7° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">26 de Julio</div>
+                                <div class="service-name">8° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 7 jul · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 23 jul · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 9 y 23 jul · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 18 jul · 10:00–13:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Clase de Confirmación</strong> · Frutillar · 25 jul · 10:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 28 jul · 19:30</div>
+                            <div class="mt-3">
+                                <span class="section-label label-especial"><i class="bi bi-star me-1"></i>Actividades Especiales</span>
+                                <div class="activity-item"><i class="bi bi-dot" style="color:#856404;"></i><strong>Conferencia Pastores ILCH</strong> · Valdivia · 13 jul</div>
+                                <div class="activity-item"><i class="bi bi-dot" style="color:#856404;"></i><strong>Capacitación Pastoral</strong> · Valdivia · 14–17 jul</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AGOSTO -->
+            <div id="agosto" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-wind me-2"></i>Agosto 2026</h3>
+                    <span class="season-badge">📖 Tiempo de la Iglesia</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">2 de Agosto</div>
+                                <div class="service-name">9° Domingo después de Trinidad</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">9 de Agosto</div>
+                                <div class="service-name">10° Domingo después de Trinidad</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">16 de Agosto</div>
+                                <div class="service-name">11° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">23 de Agosto</div>
+                                <div class="service-name">12° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">30 de Agosto</div>
+                                <div class="service-name">13° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Puerto Fonck 11:00</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 4 ago · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 27 ago · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 6 y 20 ago · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 25 ago · 19:30</div>
+                            <div class="mt-3">
+                                <span class="section-label label-especial"><i class="bi bi-star me-1"></i>Actividades Especiales</span>
+                                <div class="activity-item"><i class="bi bi-dot" style="color:#856404;"></i><strong>Campamento Confirmandos</strong> · Puerto Fonck · 28–29 ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEPTIEMBRE -->
+            <div id="septiembre" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-flower1 me-2"></i>Septiembre 2026</h3>
+                    <span class="season-badge">📖 Tiempo de la Iglesia</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">6 de Septiembre</div>
+                                <div class="service-name">14° Domingo después de Trinidad</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">13 de Septiembre</div>
+                                <div class="service-name">15° Domingo después de Trinidad</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">20 de Septiembre</div>
+                                <div class="service-name">16° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">27 de Septiembre</div>
+                                <div class="service-name">17° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 1 sep · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 24 sep · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 3 y 24 sep · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 22 sep · 19:30</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Clase de Confirmación</strong> · Llanquihue · 26 sep · 10:00</div>
+                            <div class="mt-3">
+                                <span class="section-label label-especial"><i class="bi bi-star me-1"></i>Actividades Especiales</span>
+                                <div class="activity-item"><i class="bi bi-dot" style="color:#856404;"></i><strong>Conferencia Pastores ILCH</strong> · Online · 4 sep</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OCTUBRE -->
+            <div id="octubre" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-award me-2"></i>Octubre 2026</h3>
+                    <span class="season-badge">📖 Tiempo de la Iglesia</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">4 de Octubre</div>
+                                <div class="service-name">18° Domingo después de Trinidad</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">11 de Octubre</div>
+                                <div class="service-name">19° Domingo después de Trinidad</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">18 de Octubre</div>
+                                <div class="service-name">20° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">25 de Octubre</div>
+                                <div class="service-name">21° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 6 oct · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 22 oct · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 8 y 22 oct · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 17 oct · 10:00–13:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Clase de Confirmación</strong> · Llanquihue · 24 oct · 10:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 27 oct · 19:30</div>
+                            <div class="mt-3">
+                                <span class="section-label label-especial"><i class="bi bi-star me-1"></i>Actividades Especiales</span>
+                                <div class="activity-item"><i class="bi bi-dot" style="color:#856404;"></i><strong>Confirmación de Oro</strong> · Llanquihue · 18 oct · 11:30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOVIEMBRE -->
+            <div id="noviembre" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header">
+                    <h3><i class="bi bi-moon-stars me-2"></i>Noviembre 2026</h3>
+                    <span class="season-badge">📖 Fin del Año Eclesiástico</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">1 de Noviembre</div>
+                                <div class="service-name">22° Domingo después de Trinidad</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">8 de Noviembre</div>
+                                <div class="service-name">23° Domingo después de Trinidad</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">15 de Noviembre</div>
+                                <div class="service-name">24° Domingo después de Trinidad</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">22 de Noviembre</div>
+                                <div class="service-name">Último Domingo del Año Eclesiástico</div>
+                                <div class="service-times">Frutillar 11:30 · Los Bajos 15:30 · Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">29 de Noviembre</div>
+                                <div class="service-name">1° Domingo de Adviento</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 3 nov · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 26 nov · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 5 y 19 nov · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 14 nov · 10:00–13:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 24 nov · 19:30</div>
+                            <div class="mt-3">
+                                <span class="section-label label-especial"><i class="bi bi-star me-1"></i>Actividades Especiales</span>
+                                <div class="activity-item"><i class="bi bi-dot" style="color:#856404;"></i><strong>Confirmaciones</strong> · 15 y 22 nov</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DICIEMBRE -->
+            <div id="diciembre" class="month-card mb-4" style="scroll-margin-top: 80px;">
+                <div class="month-header" style="background: linear-gradient(135deg, #1a2e50 0%, #3a7bd5 100%);">
+                    <h3><i class="bi bi-snow2 me-2"></i>Diciembre 2026</h3>
+                    <span class="season-badge">📖 Adviento y Navidad</span>
+                </div>
+                <div class="p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <span class="section-label label-cultos"><i class="bi bi-church me-1"></i>Cultos Dominicales</span>
+                            <div class="service-item">
+                                <div class="service-date">6 de Diciembre</div>
+                                <div class="service-name">2° Domingo de Adviento</div>
+                                <div class="service-times">Puerto Octay 10:00 · Frutillar 11:30 · Llanquihue 11:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">13 de Diciembre</div>
+                                <div class="service-name">3° Domingo de Adviento</div>
+                                <div class="service-times">Los Bajos 10:00 · Nueva Braunau 11:30 · Frutillar 11:30 · Llanquihue 18:00</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">20 de Diciembre</div>
+                                <div class="service-name">4° Domingo de Adviento</div>
+                                <div class="service-times">Frutillar 11:30 · Llanquihue 11:30 · Purranque 15:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">24 de Diciembre</div>
+                                <div class="service-name">✨ Noche Buena</div>
+                                <div class="service-times">Purranque 17:00 · Nueva Braunau 17:00 · Frutillar 19:00 · Llanquihue 18:30</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">25 de Diciembre</div>
+                                <div class="service-name">🎄 Navidad</div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-date">27 de Diciembre</div>
+                                <div class="service-name">1° Domingo después de Navidad</div>
+                                <div class="service-times">Llanquihue 11:30 · Nueva Braunau 15:30</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <span class="section-label label-comunidad"><i class="bi bi-people me-1"></i>Vida de la Comunidad</span>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio</strong> · Frutillar · 1 dic · 19:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Directorio Seegemeinde</strong> · Frutillar · 17 dic · 18:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Café de Varones</strong> · Frutillar · 3 y 17 dic · 08:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Conversatorio de la Fe</strong> · Frutillar · 19 dic · 10:00–13:00</div>
+                            <div class="activity-item"><i class="bi bi-dot text-primary"></i><strong>Estudio Bíblico</strong> · Nueva Braunau · 22 dic · 19:30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

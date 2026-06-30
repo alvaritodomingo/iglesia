@@ -1,0 +1,28 @@
+Aplica esta segunda ronda de modificaciones estructurales en los archivos HTML y rutas Flask correspondientes, basándote en los datos exactos del cliente:
+
+1. REHAZ LA VISTA "CALENDARIO":
+- Elimina por completo el widget actual del calendario (el formato de cuadrícula tipo Google Calendar). El cliente exige utilizar su propio diseño.
+- En su lugar, inserta un contenedor responsivo con un elemento <iframe> configurado al 100% de ancho y una altura mínima de 600px. Este iframe alojará un calendario de Microsoft Sway (deja el src vacío por ahora como placeholder).
+- Elimina la sección inferior de "Actividades Regulares" (Cultos Dominicales, Escuela Dominical, etc.) de esta vista, ya que su contenido se migrará a la página de Actividades.
+
+2. REESTRUCTURACIÓN DE LA VISTA "ACTIVIDADES" (Antigua "Cultos"):
+- Cambia el título principal de la vista a "Actividades".
+- Elimina la estructura actual y divide la página en 4 secciones o bloques claramente diferenciados, manteniendo la paleta de colores y el estilo de tarjetas (cards) del sitio:
+
+  a) SECCIÓN 1: "Cultos". 
+     - Mueve aquí la tarjeta de "Cultos Dominicales".
+     - Añade un texto indicando que se realizan cultos en: Frutillar, Llanquihue, Purranque, Nueva Braunau, Puerto Octay, Los Bajos y Puerto Fonck.
+
+  b) SECCIÓN 2: "Casuálias". 
+     - Agrupa en este bloque las 3 tarjetas que ya existen actualmente: "Bautismos", "Matrimonios" y "Funerales". Mantén sus íconos y textos.
+
+  c) SECCIÓN 3: "Estudios Bíblicos". 
+     - Crea esta nueva sección con una tarjeta que indique: "Estudios Bíblicos regulares los días martes a las 19:30 hrs. en Nueva Braunau".
+
+  d) SECCIÓN 4: "Grupos de la Iglesia". 
+     - Mueve a este bloque las tarjetas que sacamos del calendario: "Escuela Dominical", "Ensayo de Coro" y "Reunión de Jóvenes".
+     - Agrega 4 nuevas tarjetas con esta información exacta de la comunidad:
+       * Tarjeta 1 - Título: "Café de Varones", Descripción: "Reuniones quincenales a las 08:00 hrs. en Frutillar."
+       * Tarjeta 2 - Título: "Conversatorio de la Fe", Descripción: "Encuentros mensuales los días sábado de 10:00 a 13:00 hrs. en Frutillar."
+       * Tarjeta 3 - Título: "Clases de Confirmación", Descripción: "Impartidas a las 10:00 hrs. en las comunidades de Frutillar y Llanquihue."
+       * Tarjeta 4 - Título: "Directorio", Descripción: "Reuniones periódicas de Directorio y Seegemeinde a las 18:00 y 19:00 hrs. en Frutillar."

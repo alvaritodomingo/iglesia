@@ -11,6 +11,75 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+(function initSplash() {
+    const splash = document.getElementById('splash');
+    if (!splash) return;
+
+    const phraseEl = document.getElementById('splashPhrase');
+    const skipBtn = document.getElementById('splashSkip');
+    const phrases = [
+        'Salvados por gracia, unidos en la fe.',
+        'Una confianza viva y audaz en Dios.',
+        'Raíces de fe, frutos de servicio.',
+        'La Palabra permanece para siempre.',
+        'Fieles a las enseñanzas del Evangelio.',
+        'Un espacio de fe, comunidad y servicio.'
+    ];
+
+    let seen = false;
+    try { seen = sessionStorage.getItem('splashSeen'); } catch (e) {}
+
+    // Already shown this session: remove instantly, no gate
+    if (seen) {
+        splash.remove();
+        return;
+    }
+    try { sessionStorage.setItem('splashSeen', '1'); } catch (e) {}
+
+    const reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const totalMs = reduceMotion ? 3500 : 12000;
+
+    document.body.style.overflow = 'hidden';
+
+    const perMs = totalMs / phrases.length;
+    let i = 0;
+    let dismissed = false;
+
+    const interval = setInterval(function() {
+        i++;
+        if (i >= phrases.length) {
+            clearInterval(interval);
+            return;
+        }
+        if (phraseEl) {
+            phraseEl.classList.remove('swap');
+            void phraseEl.offsetWidth;
+            phraseEl.textContent = phrases[i];
+            phraseEl.classList.add('swap');
+        }
+    }, perMs);
+
+    const timer = setTimeout(dismiss, totalMs);
+
+    function dismiss() {
+        if (dismissed) return;
+        dismissed = true;
+        clearInterval(interval);
+        clearTimeout(timer);
+        splash.classList.add('hide');
+        document.body.style.overflow = '';
+        setTimeout(function() {
+            if (splash && splash.parentNode) splash.remove();
+        }, 700);
+    }
+
+    if (skipBtn) skipBtn.addEventListener('click', dismiss);
+
+    // Safety net: never trap the user even if something above fails
+    window.setTimeout(dismiss, totalMs + 1500);
+})();
+
 function loadChurches() {
     const container = document.getElementById('iglesias-container');
     

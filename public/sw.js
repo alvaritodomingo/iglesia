@@ -1,4 +1,4 @@
-const CACHE_NAME = 'iglesia-lago-v1';
+const CACHE_NAME = 'iglesia-lago-v4';
 const ASSETS = [
   'index.html',
   'nosotros.html',

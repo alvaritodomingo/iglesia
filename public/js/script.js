@@ -3,6 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setupContactForm();
 });
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').catch(function(err) {
+            console.warn('Service worker registration failed:', err);
+        });
+    });
+}
+
 function loadChurches() {
     const container = document.getElementById('iglesias-container');
     

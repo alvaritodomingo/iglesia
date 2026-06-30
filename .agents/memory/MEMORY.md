@@ -1,0 +1,1 @@
+- [Static deployment served 404](deployment-static-404.md) — Replit static hosting 404'd despite "success" builds; site runs as Flask+gunicorn autoscale on port 5000.
